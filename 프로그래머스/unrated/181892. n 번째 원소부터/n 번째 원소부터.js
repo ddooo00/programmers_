@@ -1,5 +1,8 @@
+
 function solution(num_list, n) {
-    let answer =  num_list.slice([n-1])
-    console.log(answer)
-    return answer;
+    let result = [];
+    for (let i = n - 1; i < num_list.length; i++) {
+        result.push(num_list[i]);
+    }
+    return result;
 }
