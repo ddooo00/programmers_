@@ -1,3 +1,10 @@
+
 function solution(num_list) {
-    return num_list.sort((a,b) => a - b).slice(0,5)
+    const answer = [];
+
+    const sorteList = num_list.sort((a,b) => a-b);
+    for(let i=0; i< 5; i++){
+        answer.push(sorteList[i]);
+    }
+    return answer;
 }
