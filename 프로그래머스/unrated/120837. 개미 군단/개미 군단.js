@@ -1,3 +1,7 @@
 function solution(hp) {
-    return parseInt(hp/5) + parseInt((hp%5)/3) + parseInt((hp%5)%3)
+    var a =  Math.floor(hp / 5) ;
+    var b = Math.floor((hp - a * 5) / 3)
+    var c = hp - a*5 - b*3
+
+    return a + b + c;
 }
