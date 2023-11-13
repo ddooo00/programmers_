@@ -1,3 +1,3 @@
 function solution(my_string, is_prefix) {
-  return my_string.split('').filter((_, index) => my_string.substring(0, index + 1) === is_prefix).length > 0 ? 1 : 0;
+    return my_string.slice(0, is_prefix.length) === is_prefix ? 1 : 0
 }
