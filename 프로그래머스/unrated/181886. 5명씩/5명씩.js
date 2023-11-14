@@ -1,3 +1,11 @@
 function solution(names) {
-    return names.filter((_,a) => a%5 === 0)
+    let result = [];
+
+    for(let i = 0; i < names.length; i++) {
+        if(i%5 == 0) {
+            result.push(names[i]);
+        }
+    }
+
+    return result;
 }
